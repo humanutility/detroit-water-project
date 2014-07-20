@@ -1,1 +1,1 @@
-<? php include_once("index.html"); ?>
+<? php echo file_get_contents("index.html"); ?>
