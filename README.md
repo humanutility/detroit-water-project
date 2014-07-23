@@ -4,7 +4,7 @@ detroit-water-project
 We're helping people Detroit get their water turned back on.
 
 ## How it works
-Residents who need help and donors who are willing to help out others can enter their information on [Turn on Detroit's Water](http://detroit-water-project.herokuapp.com/index.html). Then, donors are matched with residents who are behind on their water payments.
+Residents who need help and donors who are willing to help out others can enter their information on [detroitwaterproject.org](http://detroitwaterproject.org). Then, donors are matched with residents who are behind on their water payments.
 
 ### If you are a resident and need some help:
 **Please enter your information [on this form](https://docs.google.com/forms/d/1Cp1HJYYjN7zS6w6MI7wTvny9DrQetlA7GRNmb9TKYXA/viewform). Your name will be kept confidential unless you choose to note otherwise on the form.**
