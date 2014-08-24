@@ -5,3 +5,13 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+.jump-anchor {
+  position: relative;
+  bottom: 32px;
+  display: block;
+}
+
+.jump-anchor[name='privacy'] {
+  bottom: 53px;
+}
