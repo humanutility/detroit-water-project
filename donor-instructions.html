@@ -80,6 +80,8 @@
           document.getElementById('entry_1931363740').value = acct;
         } else if(name == 'donation') {
           return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        } else if(name == 'email') {
+          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         }
       }
     </script>
@@ -105,12 +107,13 @@
           var pledge_amt = $('#entry_1229792602').val();
           var confirmation_number = $('#entry_1167056709').val();
           var acct_number = $('#entry_1931363740').val();
+          var email_addy = $('#entry_225202623').val();
 
           $.ajax({
             type: "POST",
             url: "https://docs.google.com/forms/d/1RNTDmCIB4S4exomI3Ppc0dMuoAYSIi-krOhfUNP0H78/formResponse",
             crossDomain: true,
-            data: { "entry.1167056709" : confirmation_number, "entry.1229792602" : pledge_amt, "entry.1931363740" : acct_number },
+            data: { "entry.225202623": email_addy, "entry.1167056709" : confirmation_number, "entry.1229792602" : pledge_amt, "entry.1931363740" : acct_number },
             success: function(data) {
               console.log("SUCCESS!");
             }
@@ -124,6 +127,7 @@
           elem.parentNode.removeChild(elem);
         }
 
+        document.getElementById('entry_225202623').value = display_dwsd_account('email');
         document.getElementById('entry_1229792602').value = display_dwsd_account('donation');
 
         var pledge = '$' + display_dwsd_account('donation');
@@ -224,6 +228,7 @@
                     <input type="text" name="entry.1167056709" id="entry_1167056709" style="width: 100%;" class="input-lg form-control" />
                     <input type="hidden" name="entry.1229792602" id="entry_1229792602" />
                     <input type="hidden" name="entry.1931363740" id="entry_1931363740" />
+                    <input type="hidden" name="entry.225202623" id="entry_225202623" />
                   </div>
                   <div class="form-group">
                     <button type="submit" id="submit-confirmation" class="btn btn-success btn-lg">Submit</button>
