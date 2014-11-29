@@ -77,7 +77,6 @@
         if(name == 'acct') {
           var acct = results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
           document.getElementById('dwsd-account-number').innerHTML = acct;
-          document.getElementById('entry_1931363740').value = acct;
         } else if(name == 'donation') {
           return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         } else if(name == 'email') {
