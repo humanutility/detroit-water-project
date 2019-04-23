@@ -1,7 +1,7 @@
 detroit-water-project
 =====================
 
-We're helping people Detroit get their water turned back on.
+We're helping people in Detroit and Baltimore get their water turned back on.
 
 ## How it works
 Residents who need help and donors who are willing to help out others can enter their information on [detroitwaterproject.org](http://detroitwaterproject.org). Then donors are matched with residents who are behind on their water payments.
